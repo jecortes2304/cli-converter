@@ -1,0 +1,19 @@
+spring:
+  ai:
+    openai:
+      api-key: ${OPEN_AI_API_KEY}
+      chat:
+        enabled: true
+        options:
+          model: "gpt-3.5-turbo"
+  main:
+    banner-mode: off
+    web-application-type: none
+  shell:
+    interactive:
+      enabled: true
+    script:
+      enabled: true
+logging:
+  level:
+    root: OFF
