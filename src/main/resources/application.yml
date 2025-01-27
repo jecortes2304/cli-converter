@@ -7,7 +7,7 @@ spring:
         options:
           model: "gpt-3.5-turbo"
   main:
-    banner-mode: console
+    banner-mode: off
     web-application-type: none
   shell:
     interactive:
