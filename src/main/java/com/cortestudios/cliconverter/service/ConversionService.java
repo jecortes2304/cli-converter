@@ -20,6 +20,8 @@ public class ConversionService {
                 .destinationFormat(outputFormat)
                 .build();
 
+        System.out.println("Converting: " + message);
+
         Map<String, String> response = Map.of("completion",
                 Objects.requireNonNull(chatClient.prompt()
                         .user(message.toString()).call().content()));
