@@ -26,6 +26,8 @@ public class ConversionService {
                 Objects.requireNonNull(chatClient.prompt()
                         .user(message.toString()).call().content()));
 
+        System.out.println("Bla bla bla bla");
+
         return response.get("completion");
 
     }
